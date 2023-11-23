@@ -7,6 +7,9 @@ pass through the point (x,y) = (2,10) on its way to the destination.
 Further, the robot has to avoid obstacles on its way as it moves
 through the target goals.
 
+![Screenshot from 2023-11-23 16-20-55](https://github.com/ANKITSINGH47/path-following-and-obstacle-avoidance-robot/assets/47277960/1900faf6-fc07-4634-a6a1-646a6efb0fa2)
+
+
 ## 2 PURE PURSUIT ALGORITHM
 Pure pursuit is a tracking algorithm that works by calculating
 the curvature that will move a vehicle from its current position
@@ -28,6 +31,9 @@ two points.
 Let point (x, y) be a way-point , which is a look ahead distance
 from the origin. The curvature of the arc that joins the origin
 to point (x, y) and whose chord length is l is calculated as
+
+![Screenshot from 2023-11-23 16-21-15](https://github.com/ANKITSINGH47/path-following-and-obstacle-avoidance-robot/assets/47277960/c16a62df-f055-47c2-80ac-651658ae9262)
+
 
 ### 2.2 INPUTS TO ALGORITHM
 1. Linear velocity: This is specified as a scalar in meters per
@@ -67,6 +73,9 @@ algorithm, we first used the pure pursuit block available in
 simulink for path planning as shown in below figure
 
 
+![Screenshot from 2023-11-23 16-21-27](https://github.com/ANKITSINGH47/path-following-and-obstacle-avoidance-robot/assets/47277960/469d5195-882c-4adc-8602-22a8a2994cdc)
+
+
 
 ## 3 OBSTACLE AVOIDANCE USING VECTOR
 FIELD HISTOGRAM
@@ -89,6 +98,10 @@ direction that corresponds to sector k.
 3. The lowest level of data representation is the output of the
 VFH algorithm: the reference values for the drive and steer
 controllers of the vehicle.
+
+![Screenshot from 2023-11-23 16-21-56](https://github.com/ANKITSINGH47/path-following-and-obstacle-avoidance-robot/assets/47277960/c8cba87a-62d3-45b9-8831-7c5f1b6504fd)
+
+
 
 ### 3.1 INPUTS TO ALGORITHM
 1. Ranges: Range values from scan data, specified as a vector
@@ -176,11 +189,12 @@ xi
 , yj Coordinates of active cell (i, j)
 βi,j Direction from active cell (i, j) to the VCP
 
-### 3.4 USING SIMULINK VECTOR FIELD HISTOGRAM
-BLOCK
+### 3.4 USING SIMULINK VECTOR FIELD HISTOGRAM BLOCK
 In order to understand the basic working of vector field
 histogram, we first used the VHF block available in simulink
 for obstacle avoidance as shown in below figure
+
+![Screenshot from 2023-11-23 16-22-33](https://github.com/ANKITSINGH47/path-following-and-obstacle-avoidance-robot/assets/47277960/03f6a226-7bd2-409a-9f53-bc97242242b8)
 
 
 ### 3.5 IMPLEMENTATION OF VECTOR FIELD HISTOGRAM
@@ -190,7 +204,18 @@ using the user defined function block in simulink
 
 ## 4 RESULTS & OBSERVATIONS
 
-<img width="250" alt="path following avoiding obstacle" src="https://github.com/ANKITSINGH47/path-following-and-obstacle-avoidance-robot/assets/47277960/c1c1da18-e567-481d-a0d6-9a68c172c6c4">\n
+![Screenshot from 2023-11-23 16-22-43](https://github.com/ANKITSINGH47/path-following-and-obstacle-avoidance-robot/assets/47277960/84e39cdc-7620-4db1-9da3-b99fb15ce31f)
+
+<br>
+
+![Screenshot from 2023-11-23 16-22-58](https://github.com/ANKITSINGH47/path-following-and-obstacle-avoidance-robot/assets/47277960/e561509d-ed62-4175-83dc-9944a2815ec5)
+
+<br>
+
+![Screenshot from 2023-11-23 16-23-12](https://github.com/ANKITSINGH47/path-following-and-obstacle-avoidance-robot/assets/47277960/a4e5c634-821a-49a3-a4a1-d4cfd213a79b)
+
+
+
 
 
 
