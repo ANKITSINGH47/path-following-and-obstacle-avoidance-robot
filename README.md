@@ -223,23 +223,3 @@ using the user defined function block in simulink
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img width="250" alt="path-track2" src="https://github.com/ANKITSINGH47/path-following-and-obstacle-avoidance-robot/assets/47277960/be3cff71-22ee-4727-b7ce-144b8a878781">
-
-
